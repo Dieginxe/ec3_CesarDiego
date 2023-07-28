@@ -1,0 +1,60 @@
+
+GET https://dieginxe-organic-waffle-jxpjr9q4j4vhp547-8080.preview.app.github.dev
+
+###
+
+
+@server = https://dieginxe-super-duper-capybara-r4rwvgv795qf9w6-8080.preview.app.github.dev
+
+###
+
+GET {{server}}/
+
+###
+GET {{server}}/instrumentos
+
+###
+POST {{server}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Autos"}
+
+###
+GET {{server}}/categorias
+
+###
+POST {{server}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos Musicales"}
+
+
+###
+PATCH {{server}}/instrumentos/1
+Content-Type: application/json
+
+{"nombre": "Nissan"}
+
+
+###
+GET {{server}}/instrumentos?size=2&page=2
+
+
+##########
+
+GET {{server}}/instrumentos
+
+###
+
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Marketing"}
+
+##########
+
+GET {{server}}/carreras/1/cursos
+
+##########
+
+GET {{server}}/cursos/6/carrera
